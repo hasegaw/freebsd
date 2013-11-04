@@ -1,5 +1,7 @@
 /*-
- * Copyright (c) 1998-2003 Poul-Henning Kamp
+ * KVM pvclock (based on tsc implementation)
+ *
+ * Copyright (c) 1998-2003 Takeshi HASEGAWA
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -25,7 +27,7 @@
  */
 
 #include <sys/cdefs.h>
-__FBSDID("$FreeBSD: src/sys/amd64/amd64/tsc.c,v 1.209.2.1.4.1 2010/06/14 02:09:06 kensmith Exp $");
+__FBSDID("$FreeBSD$");
 
 #include "opt_clock.h"
 

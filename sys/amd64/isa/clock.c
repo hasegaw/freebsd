@@ -473,6 +473,7 @@ startrtclock()
 	tc_init(&i8254_timecounter);
 
 	init_TSC();
+	init_kvmclock();
 }
 
 /*
@@ -541,6 +542,7 @@ cpu_initclocks()
 	}
 
 	init_TSC_tc();
+	init_kvmclock_tc();
 }
 
 void

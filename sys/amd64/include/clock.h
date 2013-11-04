@@ -36,6 +36,8 @@ int	profclockintr(struct trapframe *frame);
 void	startrtclock(void);
 void	init_TSC(void);
 void	init_TSC_tc(void);
+void	init_kvmclock(void);
+void	init_kvmclock_tc(void);
 
 #define	HAS_TIMER_SPKR 1
 int	timer_spkr_acquire(void);
